@@ -59,7 +59,7 @@ require_once 'enlaces.php';
                 <button class="btn btn-filter" data-filter="Streaming">Cuentas Streaming</button>
             </div>
         </div>
-
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yumireana/video/7352066061207932168" data-video-id="7352066061207932168" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@yumireana" href="https://www.tiktok.com/@yumireana?refer=embed">@yumireana</a> &#34;Car In Car&#34; <a title="catsoftiktok" target="_blank" href="https://www.tiktok.com/tag/catsoftiktok?refer=embed">#catsoftiktok</a> <a title="car" target="_blank" href="https://www.tiktok.com/tag/car?refer=embed">#Car</a> <a title="cat" target="_blank" href="https://www.tiktok.com/tag/cat?refer=embed">#cat</a> <a title="silly" target="_blank" href="https://www.tiktok.com/tag/silly?refer=embed">#silly</a> <a title="meme" target="_blank" href="https://www.tiktok.com/tag/meme?refer=embed">#Meme</a> <a target="_blank" title="♬ ZOMBIE TSUNAMI - DoodleBurgurVolume²⁴A" href="https://www.tiktok.com/music/ZOMBIE-TSUNAMI-7352066109086173953?refer=embed">♬ ZOMBIE TSUNAMI - DoodleBurgurVolume²⁴A</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
         <div class="row g-4" id="cardsGrid">
             <?php foreach ($enlaces_vehiculares as $item): ?>
                 <div class="col-12 col-md-6 col-lg-4 card-element" data-category="<?php echo $item['categoria']; ?>">
