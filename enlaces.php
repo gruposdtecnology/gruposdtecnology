@@ -1,5 +1,5 @@
 <?php
-// Módulo de configuración de enlaces vehiculares nacionales
+// Módulo de configuración de enlaces vehiculares y servicios digitales de GruposD Technology
 $enlaces_vehiculares = [
     [
         "titulo" => "Consulta Vehicular",
@@ -23,7 +23,7 @@ $enlaces_vehiculares = [
         "url" => "https://sigueloplus.sunarp.gob.pe/siguelo/",
         "imagen" => "img/sunarp3.svg",
         "icono" => "fas fa-dollar-sign",
-        "desc" => "Síguelo PLUS - Verifica los títulos y costos declarados en transferencias."
+        "desc" => "Síguelo PLUS - Verifica los títulos y costos declarados in transferencias."
     ],
     [
         "titulo" => "Vehículos a mi Nombre",
@@ -288,5 +288,89 @@ $enlaces_vehiculares = [
         "imagen" => "img/muni-trujillo.jpg",
         "icono" => "fas fa-map-marker-alt",
         "desc" => "SATT: Consulta del récord de infracciones y estados de cuenta tributarios."
+    ],
+    
+    // ==========================================================================
+    // NUEVA CATEGORÍA: PLATAFORMAS DE STREAMING CON ADQUISICIÓN POR WHATSAPP
+    // ==========================================================================
+    [
+        "titulo" => "Netflix Premium",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Netflix%20Premium",
+        "imagen" => "img/netflix.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Cuentas completas o perfiles privados Ultra HD 4K estables y garantizados."
+    ],
+    [
+        "titulo" => "Disney+ Premium",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Disney+",
+        "imagen" => "img/disney.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Acceso total a todo el contenido de Disney, Pixar, Marvel, Star Wars y deportes."
+    ],
+    [
+        "titulo" => "Max (HBO)",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Max",
+        "imagen" => "img/max.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Disfruta de las mejores películas y series de Warner Bros, HBO y DC Universe."
+    ],
+    [
+        "titulo" => "Prime Video",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Prime%20Video",
+        "imagen" => "img/prime.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Streaming original de Amazon en alta definición y reproducción multipantalla."
+    ],
+    [
+        "titulo" => "Spotify Premium",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Spotify%20Premium",
+        "imagen" => "img/spotify.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Escucha tu música favorita de forma ilimitada, sin anuncios y en modo offline."
+    ],
+    [
+        "titulo" => "YouTube Premium",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20YouTube%20Premium",
+        "imagen" => "img/youtube.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Videos sin publicidad, reproducción en segundo plano y acceso a YT Music."
+    ],
+    [
+        "titulo" => "Crunchyroll Mega Fan",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Crunchyroll",
+        "imagen" => "img/crunchyroll.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "El catálogo de anime más grande del mundo sin interrupciones directamente desde Japón."
+    ],
+    [
+        "titulo" => "Paramount+",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Paramount+",
+        "imagen" => "img/paramount.jpg",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Transmisión de grandes series exclusivas, películas taquilleras y torneos en vivo."
+    ],
+    [
+        "titulo" => "Apple TV+",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Apple%20TV+",
+        "imagen" => "img/appletv.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Producciones originales y galardonadas con la máxima calidad audiovisual."
+    ],
+    [
+        "titulo" => "IPTV / Plex",
+        "categoria" => "Streaming",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20un%20servicio%20de%20IPTV%20Plex",
+        "imagen" => "img/iptv.png",
+        "icono" => "fab fa-whatsapp",
+        "desc" => "Miles de canales premium nacionales e internacionales en vivo y cine bajo demanda."
     ]
 ];
