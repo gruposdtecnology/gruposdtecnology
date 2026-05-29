@@ -1,58 +1,41 @@
 /* ==========================================================================
-   CONFIGURACIÓN GLOBAL Y VARIABLES
+   PLATAFlORMA INTEGRADA DE CONSULTAS VEHICULARES - ESTILOS GENERALES
    ========================================================================== */
+
 :root {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --accent-color: #3b82f6;
-    --accent-hover: #2563eb;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --card-glass: rgba(30, 41, 59, 0.7);
+    --bg-main: #0b132b;
+    --bg-card: #1c2541;
+    --bg-hero: #111a36;
+    --text-primary: #ffffff;
+    --text-secondary: #a0aec0;
+    --primary-blue: #3b82f6;
+    --primary-blue-hover: #2563eb;
+    --border-card: rgba(255, 255, 255, 0.08);
+    --transition-fast: all 0.2s ease;
+    --font-inter: 'Inter', sans-serif;
 }
 
 body {
-    background-color: var(--bg-primary);
-    color: var(--text-main);
-    font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-inter);
+    margin: 0;
+    padding: 0;
 }
 
-/* ==========================================================================
-   HERO HEADER (Sección Superior)
-   ========================================================================== */
+/* 1. Hero Section & Buscador */
 .hero-section {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.8) 100%), 
-    url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    margin-bottom: 50px;
+    background: radial-gradient(circle at top, #1e294b 0%, var(--bg-hero) 100%);
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-card);
 }
 
 .hero-title {
     font-weight: 700;
-    font-size: 2.8rem;
-    letter-spacing: -0.05rem;
-    background: linear-gradient(to right, #ffffff, #93c5fd);
-    -webkit-background-clip: text;
-    background-clip: text; /* Corrección de advertencia (Warning) en VS Code */
-    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    letter-spacing: -0.03em;
 }
 
-/* Optimización de legibilidad para el texto descriptivo del Hero */
-.hero-section p.text-muted {
-    color: #cbd5e1 !important; /* Tono gris claro (Slate 300) con alto contraste */
-    font-weight: 500;          /* Mayor definición y cuerpo a la tipografía */
-    font-size: 1.05rem;        /* Tamaño óptimo para lectura fluida */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Despega las letras del fondo degradado */
-}
-
-/* ==========================================================================
-   BUSCADOR INTELIGENTE / INPUT SIGHT
-   ========================================================================== */
 .search-container {
     max-width: 600px;
     margin: 30px auto 0 auto;
@@ -60,187 +43,192 @@ body {
 
 .search-wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search-wrapper i {
     position: absolute;
     left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-muted);
-    z-index: 5;
+    color: var(--text-secondary);
 }
 
 .search-input {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: var(--text-main) !important;
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-card) !important;
+    color: var(--text-primary) !important;
+    padding: 14px 20px 14px 50px !important;
     border-radius: 30px !important;
-    padding: 12px 25px 12px 50px !important;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    transition: var(--transition-fast);
 }
 
 .search-input:focus {
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4) !important;
-    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.25) !important;
+    border-color: var(--primary-blue) !important;
 }
 
-/* Optimización de legibilidad para el texto de sugerencia (Placeholder) */
-.search-input::placeholder {
-    color: #cbd5e1 !important; /* Color gris claro altamente visible */
-    opacity: 1;
+/* 2. Filtros y Categorías */
+#filterContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
 }
 
-.search-input::-webkit-input-placeholder {
-    color: #cbd5e1 !important;
-}
-
-.search-input::-moz-placeholder {
-    color: #cbd5e1 !important;
-}
-
-/* ==========================================================================
-   BOTONES DE FILTRADO (CATEGORÍAS)
-   ========================================================================== */
 .btn-filter {
-    background-color: var(--bg-secondary);
-    color: var(--text-muted);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    padding: 8px 18px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-secondary) !important;
+    border: 1px solid var(--border-card) !important;
+    padding: 8px 22px !important;
+    border-radius: 30px !important;
+    font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.2s ease;
-    margin: 5px;
+    transition: var(--transition-fast) !important;
 }
 
-.btn-filter.active, .btn-filter:hover {
-    background-color: var(--accent-color);
-    color: white;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+.btn-filter:hover {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    color: var(--text-primary) !important;
 }
 
-/* ==========================================================================
-   TARJETAS MODERNAS (UI GRID)
-   ========================================================================== */
+.btn-filter.active {
+    background-color: var(--primary-blue) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--primary-blue) !important;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+    font-weight: 600;
+}
+
+/* 3. Diseño Estructural de Tarjetas (Cards) */
 .custom-card {
-    background: var(--card-glass);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-card);
     border-radius: 16px;
     overflow: hidden;
     height: 100%;
-    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(12px);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
 .custom-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 1px 2px var(--accent-color);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-element {
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .card-img-wrapper {
     position: relative;
-    height: 180px;
-    overflow: hidden;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-card);
 }
 
 .card-img-top {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.custom-card:hover .card-img-top {
-    transform: scale(1.08);
+    max-height: 100%;
+    max-width: 80%;
+    object-fit: contain;
+    width: auto;
 }
 
 .card-badge {
     position: absolute;
     top: 15px;
-    right: 15px;
-    background-color: rgba(15, 23, 42, 0.85);
-    color: #60a5fa;
-    padding: 5px 12px;
-    border-radius: 20px;
+    left: 15px;
+    background-color: rgba(11, 19, 43, 0.75);
+    backdrop-filter: blur(4px);
+    color: var(--text-secondary);
     font-size: 0.75rem;
     font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border-card);
     text-transform: uppercase;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.05em;
 }
 
 .card-icon-floating {
     position: absolute;
     bottom: -20px;
-    right: 20px;
-    width: 45px;
-    height: 45px;
-    background: var(--accent-color);
-    color: white;
+    right: 25px;
+    width: 42px;
+    height: 42px;
+    background-color: var(--primary-blue);
+    color: var(--text-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: 3px solid var(--bg-card);
 }
 
 .card-body-custom {
-    padding: 28px 20px 20px 20px;
-    flex-grow: 1;
+    padding: 30px 25px 25px 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card-title-custom {
     font-size: 1.15rem;
     font-weight: 600;
-    line-height: 1.4;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: var(--text-primary);
+    line-height: 1.4;
 }
 
 .card-text-custom {
-    color: var(--text-muted);
-    font-size: 0.88rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 .card-btn {
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid var(--border-card);
+    padding: 11px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
     text-decoration: none;
+    transition: var(--transition-fast);
+    width: 100%;
 }
 
 .card-btn:hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    color: white;
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* ==========================================================================
-   FOOTER (Pie de página)
-   ========================================================================== */
+/* 4. Footer & Elementos de Cierre */
 footer {
-    background-color: #090d16;
-    padding: 30px 0;
-    margin-top: 80px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: var(--text-muted);
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid var(--border-card);
+    background-color: #080e20;
+}
+
+footer p {
     font-size: 0.9rem;
+    color: var(--text-secondary);
 }
