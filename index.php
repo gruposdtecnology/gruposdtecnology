@@ -1,4 +1,5 @@
 <?php
+// Importamos la matriz de enlaces desde el archivo externo de configuración
 require_once 'enlaces.php';
 ?>
 <!DOCTYPE html>
@@ -10,7 +11,20 @@ require_once 'enlaces.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/SQ.png" type="image/png">
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Estilo complementario para resaltar el botón de Adquirir por WhatsApp */
+        .card-btn-wsp {
+            background-color: #25d366 !important;
+            color: #ffffff !important;
+            border-color: #25d366 !important;
+        }
+        .card-btn-wsp:hover {
+            background-color: #128c7e !important;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+    </style>
 </head>
 <body>
 
@@ -25,7 +39,7 @@ require_once 'enlaces.php';
             <div class="search-container">
                 <div class="search-wrapper">
                     <i class="fas fa-search"></i>
-                    <input type="text" id="mainSearch" class="form-control search-input" placeholder="Buscar por municipalidad, región o tipo de trámite (Ej: Huánuco, Pucallpa)...">
+                    <input type="text" id="mainSearch" class="form-control search-input" placeholder="Buscar por municipalidad, región o tipo de trámite (Ej: Huánuco, Pucallpa, Netflix)...">
                 </div>
             </div>
         </div>
@@ -41,6 +55,8 @@ require_once 'enlaces.php';
                 <button class="btn btn-filter" data-filter="Seguridad">Seguridad y SOAT</button>
                 <button class="btn btn-filter" data-filter="Gas">GNV / GLP</button>
                 <button class="btn btn-filter" data-filter="Municipales">Municipalidades y SATs</button>
+                
+                <button class="btn btn-filter" data-filter="Streaming">Cuentas Streaming</button>
             </div>
         </div>
 
@@ -62,10 +78,17 @@ require_once 'enlaces.php';
                                 <p class="card-text-custom"><?php echo $item['desc']; ?></p>
                             </div>
                             
-                            <a href="<?php echo $item['url']; ?>" target="_blank" rel="noopener noreferrer" class="card-btn">
-                                <span>Consultar Plataforma</span>
-                                <i class="fas fa-external-link-alt fa-xs"></i>
-                            </a>
+                            <?php if ($item['categoria'] === 'Streaming'): ?>
+                                <a href="<?php echo $item['url']; ?>" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-wsp">
+                                    <span>Adquirir Cuenta</span>
+                                    <i class="fab fa-whatsapp fa-sm ms-1"></i>
+                                </a>
+                            <?php else: ?>
+                                <a href="<?php echo $item['url']; ?>" target="_blank" rel="noopener noreferrer" class="card-btn">
+                                    <span>Consultar Plataforma</span>
+                                    <i class="fas fa-external-link-alt fa-xs"></i>
+                                </a>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -75,7 +98,7 @@ require_once 'enlaces.php';
         <div id="noResults" class="text-center my-5 py-5 d-none">
             <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
             <h4 class="text-white">No se encontraron servicios coincidentes</h4>
-            <p class="text-muted">Prueba usando términos diferentes como 'Huánuco', 'Sutran' o 'Placa'.</p>
+            <p class="text-muted">Prueba usando términos diferentes como 'Huánuco', 'Sutran' o 'Netflix'.</p>
         </div>
     </main>
 
