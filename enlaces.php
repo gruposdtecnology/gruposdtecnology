@@ -296,7 +296,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Netflix Premium",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Netflix%20Premium",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Netflix%20Premium",
         "imagen" => "img/netflix.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Cuentas completas o perfiles privados Ultra HD 4K estables y garantizados."
@@ -304,7 +304,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Disney+ Premium",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Disney+",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Disney+",
         "imagen" => "img/disney.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Acceso total a todo el contenido de Disney, Pixar, Marvel, Star Wars y deportes."
@@ -312,15 +312,15 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Max (HBO)",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Max",
-        "imagen" => "img/max.png",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Max",
+        "imagen" => "img/max.jpg",
         "icono" => "fab fa-whatsapp",
         "desc" => "Disfruta de las mejores películas y series de Warner Bros, HBO y DC Universe."
     ],
     [
         "titulo" => "Prime Video",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Prime%20Video",
+        "url" => "https://wa.me/51902118622?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Prime%20Video",
         "imagen" => "img/prime.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Streaming original de Amazon en alta definición y reproducción multipantalla."
@@ -328,7 +328,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Spotify Premium",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Spotify%20Premium",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Spotify%20Premium",
         "imagen" => "img/spotify.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Escucha tu música favorita de forma ilimitada, sin anuncios y en modo offline."
@@ -336,7 +336,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "YouTube Premium",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20YouTube%20Premium",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20YouTube%20Premium",
         "imagen" => "img/youtube.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Videos sin publicidad, reproducción en segundo plano y acceso a YT Music."
@@ -344,7 +344,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Crunchyroll Mega Fan",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Crunchyroll",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Crunchyroll",
         "imagen" => "img/crunchyroll.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "El catálogo de anime más grande del mundo sin interrupciones directamente desde Japón."
@@ -352,7 +352,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Paramount+",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Paramount+",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Paramount+",
         "imagen" => "img/paramount.jpg",
         "icono" => "fab fa-whatsapp",
         "desc" => "Transmisión de grandes series exclusivas, películas taquilleras y torneos en vivo."
@@ -360,7 +360,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "Apple TV+",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Apple%20TV+",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20una%20cuenta%20de%20Apple%20TV+",
         "imagen" => "img/appletv.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Producciones originales y galardonadas con la máxima calidad audiovisual."
@@ -368,7 +368,7 @@ $enlaces_vehiculares = [
     [
         "titulo" => "IPTV / Plex",
         "categoria" => "Streaming",
-        "url" => "https://wa.me/51999999999?text=Hola,%20deseo%20adquirir%20un%20servicio%20de%20IPTV%20Plex",
+        "url" => "https://wa.me/51902118722?text=Hola,%20deseo%20adquirir%20un%20servicio%20de%20IPTV%20Plex",
         "imagen" => "img/iptv.png",
         "icono" => "fab fa-whatsapp",
         "desc" => "Miles de canales premium nacionales e internacionales en vivo y cine bajo demanda."
